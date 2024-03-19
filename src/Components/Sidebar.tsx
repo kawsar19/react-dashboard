@@ -1,4 +1,6 @@
+import React from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -7,9 +9,10 @@ export default function Sidebar() {
       className="fixed top-0 left-0 z-40   w-56 h-screen transition-transform -translate-x-full sm:translate-x-0"
       aria-label="Sidebar"
     >
+      {" "}
       <div className="h-full py-4 overflow-y-auto  bg-primary-800  flex flex-col gap-5 dark:bg-gray-800">
         {/* Logo  */}
-        <a href="" className=" flex gap-1 items-center">
+        <a href="/" className=" flex gap-1 items-center">
           <figure>
             <img src={logo} alt="Logo" height="30" width="50" />
           </figure>
@@ -18,8 +21,8 @@ export default function Sidebar() {
 
         <ul className="space-y-2 font-normal">
           <li>
-            <a
-              href="#"
+            <Link
+              to="/"
               className="flex items-center gap-2 p-2 text-white  dark:text-white hover:bg-primary-900 group"
             >
               <svg
@@ -42,8 +45,8 @@ export default function Sidebar() {
             </a>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="all-farms"
               className="flex items-center gap-2 p-2 text-white  dark:text-white hover:bg-primary-900 dark:hover:bg-gray-700 group"
             >
               <svg
@@ -62,11 +65,11 @@ export default function Sidebar() {
               </svg>
 
               <span className=" whitespace-nowrap">All Farms</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="tasks"
               className="flex items-center gap-2 p-2 text-white  dark:text-white hover:bg-primary-900 dark:hover:bg-gray-700 group"
             >
               <svg
