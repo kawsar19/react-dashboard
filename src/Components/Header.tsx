@@ -1,3 +1,4 @@
+import logo from "../assets/logo.png";
 const Header = () => {
   return (
     <header className="h-16  bg-primary-200 sticky top-0 left-0 z-50">
