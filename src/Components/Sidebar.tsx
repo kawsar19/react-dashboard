@@ -42,7 +42,7 @@ export default function Sidebar() {
               </svg>
 
               <span className=" whitespace-nowrap">Dashboard</span>
-            </a>
+            </Link>
           </li>
           <li>
             <Link
@@ -88,11 +88,11 @@ export default function Sidebar() {
               </svg>
 
               <span className=" whitespace-nowrap">Tasks</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/reports"
               className="flex items-center gap-2 p-2 text-white  dark:text-white hover:bg-primary-900 dark:hover:bg-gray-700 group"
             >
               <svg
@@ -114,11 +114,11 @@ export default function Sidebar() {
               </svg>
 
               <span className=" whitespace-nowrap">Reports</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/help"
               className="flex items-center gap-2 p-2 text-white  dark:text-white hover:bg-primary-900 dark:hover:bg-gray-700 group"
             >
               <svg
@@ -137,7 +137,7 @@ export default function Sidebar() {
               </svg>
 
               <span className=" whitespace-nowrap">Help</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

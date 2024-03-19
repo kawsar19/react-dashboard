@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Root from "./routes/root";
-import About from "./routes/about.tsx";
+import AllFarm from "./routes/allFarms.tsx";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -13,8 +12,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/about",
-    element: <About />,
+    path: "/all-farms",
+    element: <AllFarm />,
   },
 ]);
 
