@@ -9,7 +9,6 @@ export default function Sidebar() {
       className="fixed top-0 left-0 z-40   w-56 h-screen transition-transform -translate-x-full sm:translate-x-0"
       aria-label="Sidebar"
     >
-      {" "}
       <div className="h-full py-4 overflow-y-auto  bg-primary-800  flex flex-col gap-5 dark:bg-gray-800">
         {/* Logo  */}
         <a href="/" className=" flex gap-1 items-center">
@@ -46,7 +45,7 @@ export default function Sidebar() {
           </li>
           <li>
             <Link
-              to="all-farms"
+              to="/all-farms"
               className="flex items-center gap-2 p-2 text-white  dark:text-white hover:bg-primary-900 dark:hover:bg-gray-700 group"
             >
               <svg
@@ -69,7 +68,7 @@ export default function Sidebar() {
           </li>
           <li>
             <Link
-              to="tasks"
+              to="/tasks"
               className="flex items-center gap-2 p-2 text-white  dark:text-white hover:bg-primary-900 dark:hover:bg-gray-700 group"
             >
               <svg
